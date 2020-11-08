@@ -13,7 +13,7 @@ namespace NávrhovéVzory1
                 Console.WriteLine("Zadejte věk:");
                 věk = Math.Abs(Convert.ToInt32(Console.ReadLine())); // budeme doufat, že uživatel zadá číslo ;)
                 Console.WriteLine("Zadejte pohlaví - muž, nebo žena:");
-                pohlaví = Console.ReadLine(); // pozn. cmd neukládá diakritiku
+                pohlaví = Console.ReadLine(); // pozn. cmd neukládá některou diakritiku
                 Console.WriteLine("Zadejte Jméno:");
                 jméno = Console.ReadLine();
 

@@ -12,7 +12,7 @@ namespace NávrhovéVzory1.Model
 
         public override string ToString()
         {
-            return base.ToString() + " " + Věk.ToString() + " " + " " + Pohlaví + " " + " " + Jméno;
+            return $"Typ: {nameof(Důchodce)}, Věk: {Věk.ToString()}, pohlaví: {Pohlaví}, Jméno: {Jméno}";
         }
     }
 }

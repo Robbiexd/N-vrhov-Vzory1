@@ -55,13 +55,5 @@ namespace NávrhovéVzory1.Model
             // ne, nemůžeme mládnout ;)
             return VraťInstanci(Věk + Math.Abs(počet_let), Pohlaví, Jméno);
         }
-
-
-        public override string ToString()
-        {
-            return base.ToString() + " " + Věk.ToString() + " " + " " + Pohlaví + " " + " " + Jméno;
-        }
-
-
     }
 }
