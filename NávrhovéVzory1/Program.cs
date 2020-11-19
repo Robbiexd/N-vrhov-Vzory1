@@ -12,7 +12,7 @@ namespace NávrhovéVzory1
                 int věk; string jméno, pohlaví;
                 Console.WriteLine("Zadejte věk:");
                 věk = Math.Abs(Convert.ToInt32(Console.ReadLine())); // budeme doufat, že uživatel zadá číslo ;)
-                Console.WriteLine("Zadejte pohlaví - muž, nebo žena:");
+                Console.WriteLine("Zadejte pohlaví - muž, nebo žena:"); // pevně věřím, že uživatel zadá textový řetězec, který bude buď "muž", nebo "žena", nechce se mi implementace pohlaví předělávat
                 pohlaví = Console.ReadLine(); // pozn. cmd neukládá některou diakritiku
                 Console.WriteLine("Zadejte Jméno:");
                 jméno = Console.ReadLine();
@@ -24,6 +24,11 @@ namespace NávrhovéVzory1
                 Console.WriteLine("");
                 Console.WriteLine("---------------------------------------------------------------------------");
                 Console.WriteLine("");
+
+                if(Console.ReadLine() == "chci pryc")
+                {
+                    break;
+                }
 
             }
         }

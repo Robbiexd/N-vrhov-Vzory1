@@ -23,33 +23,32 @@ namespace NávrhovéVzory1.Model
         // veřejná statická metoda vracející instanci od třídy Osoba se vstupními parametry věk, pohlaví, jméno
         public static object VraťInstanci(int věk, string pohlaví, string jméno)
         {
+            // proč používat switch, když kaskáda if je to samé
             if(věk < 0)
             {
                 return null;
             }
-            else if(věk >= 0 && věk <= 7)
+            else if(věk <= 7)
             {
-                return new Předškolák(věk, pohlaví, jméno);
+                return Předškolák.VraťTřídu(věk, pohlaví, jméno);
             }
 
-            else if(věk >= 8 && věk <= 19)
+            else if(věk <= 19)
             {
-                return new Školák(věk, pohlaví, jméno);
+                return Školák.VraťTřídu(věk, pohlaví, jméno);
             }
-            else if (věk >= 20 && věk <= 65)
+            else if (věk <= 65)
             {
-                return new Pracující(věk, pohlaví, jméno);
+                return Pracující.VraťTřídu(věk, pohlaví, jméno);
             }
-            else if (věk > 65)
+            else 
             {
-                return new Důchodce(věk, pohlaví, jméno);
-            }
-            else
-            {
-                return null;
+                return Důchodce.VraťTřídu(věk, pohlaví, jméno);
             }
         }
 
+
+        // jak ověřit stárnutí? nechápu
         public object Stárnutí(int počet_let)
         {
             // ne, nemůžeme mládnout ;)
