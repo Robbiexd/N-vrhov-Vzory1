@@ -1,4 +1,4 @@
-# Navrhove vzory 1
+# Navrhove vzory 
 ach ta nostalgie
 
 1) Implementujte model, který bude obsahovat:
