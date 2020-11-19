@@ -1,4 +1,7 @@
-﻿1) Implementujte model, který bude obsahovat:
+# Navrhove vzory 1
+ach ta nostalgie
+
+1) Implementujte model, který bude obsahovat:
 třída Osoba
 atributy: věk, pohlaví, jméno (chráněné, pouze pro čtení)
 vlastnosti: přístup k atributům pouze směrem ven
