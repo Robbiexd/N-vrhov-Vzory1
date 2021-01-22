@@ -18,8 +18,9 @@ namespace NávrhovéVzory1.Model
             if (Školák.počet <= omezenýPočetInstancí)
             {
                 počet++;
-                Školáci.Add(new Školák(věk, pohlaví, jméno));
-                return new Školák(věk, pohlaví, jméno);
+                Školák školák = new Školák(věk, pohlaví, jméno);
+                Školáci.Add(školák);
+                return školák;
                 
             }
             else return null; // kdyz se uzivatel pokusi vytvorit vic instanci nez je povoleno, tak vracime null, neni v zadani specifikovano, co delat
